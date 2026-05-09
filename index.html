@@ -1,71 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
+    <title>Misbah Portfolio</title>
+
+    <meta name="description" content="Misbah Portfolio Website">
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: white;
-            text-align: center;
+
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            color:white;
+            text-align:center;
+
+            background-image:url('https://www.bing.com/images/search?view=detailV2&ccid=sCIKcGoU&id=F2F7027304868CD94219F5340F9D5BA482A39DF4&thid=OIP.sCIKcGoU5QJ2glmmpWWVEgHaEK&mediaurl=https%3a%2f%2fwallpaperaccess.com%2ffull%2f5652030.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b0220a706a14e502768259a6a5659512%3frik%3d9J2jgqRbnQ809Q%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=best+background+image+for+portfolio+website&FORM=IRPRST&ck=38DCBB06D6472C9B3402C33B18E4988B&selectedIndex=12&itb=0');
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
         }
 
-        header {
-            padding: 50px 20px;
+        .overlay{
+            background-color:rgba(0,0,0,0.7);
+            min-height:100vh;
+            padding-bottom:40px;
         }
 
-        h1 {
-            font-size: 45px;
-            margin-bottom: 10px;
+        header{
+            padding:60px 20px;
         }
 
-        h2 {
-            color: #ffcc00;
+        h1{
+            font-size:50px;
+            color:#ffd700;
+            margin-bottom:10px;
         }
 
-        section {
-            background: rgba(255, 255, 255, 0.1);
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        h2{
+            color:#ffcc00;
         }
 
-        .btn {
-            background: orange;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
+        p{
+            font-size:18px;
+            line-height:1.6;
         }
 
-        .btn:hover {
-            background: red;
+        section{
+            width:80%;
+            margin:20px auto;
+            padding:25px;
+
+            background:rgba(255,255,255,0.1);
+
+            border-radius:15px;
+            backdrop-filter:blur(5px);
         }
 
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(0,0,0,0.3);
+        .skills span{
+            display:inline-block;
+            background:orange;
+            color:black;
+            padding:10px 15px;
+            margin:8px;
+            border-radius:20px;
+            font-weight:bold;
         }
+
+        .btn{
+            background:orange;
+            color:black;
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            font-size:18px;
+            cursor:pointer;
+            margin-top:15px;
+        }
+
+        .btn:hover{
+            background:red;
+            color:white;
+        }
+
+        footer{
+            margin-top:30px;
+            padding:20px;
+            background:rgba(0,0,0,0.5);
+        }
+
     </style>
 
 </head>
 
 <body>
 
+<div class="overlay">
+
 <header>
+
     <h1>Hi, I'm Misbahunnisa 👩‍💻</h1>
-    <p>Web Developer </p>
+
+    <p>Software Engineer | Web Developer | AI Enthusiast</p>
+
 </header>
 
 <section>
+
     <h2>About Me</h2>
-    <p>I am passionate about building modern websites and learning new technologies like AI, Python, and web development.</p>
+
+    <p>
+        I am a Software Engineer passionate about web development, AI,
+        and building creative projects using modern technologies.
+    </p>
+
 </section>
 <section>
     <h2>Skills</h2>
@@ -76,6 +122,8 @@
     <p><b>AI / Data:</b> Machine Learning, Data Analysis</p>
     <p><b>Core Skills:</b>Problem Solving,Logical Thinking,Teamwork</p>
 </section>
+
+
 
 <section>
     <h2>Projects</h2>
@@ -89,17 +137,27 @@
 </section>
 
 <section>
+
     <h2>Contact: +971583047493</h2>
+
     <p>Email: fathimathmisbahunnisa@gmail.com</p>
 
-    <button class="btn" onclick="alert('Thanks for contacting me 😊')">
-        Hire Me
+    <button class="btn"
+    onclick="alert('Thank you for visiting my portfolio 😊')">
+
+    Hire Me
+
     </button>
+
 </section>
 
 <footer>
-    <p>© 2026 My Portfolio | Built with ❤️</p>
+
+    <p>© 2026 Misbah Portfolio | Built with ❤️</p>
+
 </footer>
+
+</div>
 
 </body>
 </html>
